@@ -1,14 +1,34 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import * as path from 'path';
-// https://vitejs.dev/config/
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { VitePWA } from 'vite-plugin-pwa';
+
 export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias:[{find:"@",replacement:path.resolve(__dirname,"src")}]
-  },server: {
-    port: 5173,
-  },
-})
-
-
+  plugins: [
+    react(),
+    VitePWA({
+      manifest: {
+        name: 'MERN Finance Dashboard with ML Predictions',
+        short_name: 'ML Dashboard',
+        start_url: '/',
+        display: 'standalone',
+        theme_color: '#4CAF50',
+        background_color: '#ffffff',
+        icons: [
+          {
+            src: 'images/screenshot.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'images/screenshot2.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+      workbox: {
+        // Customize Workbox settings if needed
+      },
+    }),
+  ],
+});

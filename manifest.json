@@ -3,12 +3,12 @@
     "name": "MERN Finance Dashboard with ML Predictions",
     "icons": [
       {
-        "src": "pix-svgrepo-com (1).svg",
+        "src": "images/screenshot.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "pix-svgrepo-com (1).svg",
+        "src": "images/screenshot2.png",
         "sizes": "512x512",
         "type": "image/png"
       }
