@@ -6,9 +6,8 @@ import { FlexBetween } from "../../components/FlexBetween";
 import { Line, LineChart, CartesianGrid, Label, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import regression, { DataPoint } from "regression";
 
-type Props = {};
 
-const Predicition = (props: Props) => {
+const Predicition = (props) => {
     const { palette } = useTheme();
     const [isPrediction, setIsPrediction] = useState(false);
     const { data: kpiData } = useGetKpisQuery();
@@ -16,11 +15,11 @@ const Predicition = (props: Props) => {
     const formattedData = useMemo(() => {
         if (!kpiData) return [];
         const monthData = kpiData[0].monthlyData;
-        const formatted: Array<DataPoint> = monthData?.map(({ revenue }, i: number) => {
+        const formatted = monthData?.map(({ revenue }, i) => {
             return [i, revenue];
         });
         const regressionLine = regression.linear(formatted);
-        return monthData.map(({ month, revenue }, i: number) => {
+        return monthData.map(({ month, revenue }, i) => {
             const dataPoint = {
                 name: month,
                 "Actual Revenue": revenue,

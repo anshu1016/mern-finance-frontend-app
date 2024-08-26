@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import {
-  GetKpisResponse,
-  GetProductsResponse,
-  GetTransactionsResponse,
-} from "./types.ts";
+// import {
+//   GetKpisResponse,
+//   GetProductsResponse,
+//   GetTransactionsResponse,
+// } from "./types.ts";
 const URL = "https://finance-app-backend-2na6.onrender.com/";
 export const api = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: URL }),

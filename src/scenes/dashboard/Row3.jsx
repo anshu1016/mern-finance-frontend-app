@@ -3,13 +3,12 @@ import { DashboardBox } from '../../components/DashboardBox'
 import { useGetKpisQuery, useGetProductsQuery, useGetTransactionsQuery } from '../../state/api'
 import BoxHeader from '../../components/BoxHeader'
 import { Box, Hidden, Typography, useTheme } from '@mui/material'
-import { DataGrid, GridCellParams } from '@mui/x-data-grid'
+import { DataGrid } from '@mui/x-data-grid'
 import { FlexBetween } from '../../components/FlexBetween'
 import { Cell, Pie, PieChart } from 'recharts'
 
-type Props = {}
 
-const Row3 = (props: Props) => {
+const Row3 = (props) => {
   const {palette} = useTheme();
   const pieColors = [palette.primary[800], palette.primary[500]];
   const {data: kpiData} = useGetKpisQuery();
@@ -24,12 +23,12 @@ const Row3 = (props: Props) => {
       field:"expense",
       headerName:"Expense",
       flex:0.5,
-      renderCell:(params: GridCellParams)=>`$${params.value}`,
+      renderCell:(params)=>`$${params.value}`,
     },{
       field:"price",
       headerName:"Price",
       flex:0.5,
-      renderCell:(params: GridCellParams)=>`$${params.value}`,
+      renderCell:(params)=>`$${params.value}`,
     },
   ]
 
@@ -48,14 +47,14 @@ const Row3 = (props: Props) => {
       field: "amount",
       headerName: "Amount",
       flex: 0.35,
-      renderCell: (params: GridCellParams) => `$${params.value}`,
+      renderCell: (params) => `$${params.value}`,
     },
     {
       field: "productIds",
       headerName: "Count",
       flex: 0.1,
-      renderCell: (params: GridCellParams) =>
-        (params.value as Array<string>).length,
+      renderCell: (params) =>
+        (params.value ).length,
     },
   ];
 

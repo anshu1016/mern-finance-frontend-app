@@ -5,9 +5,8 @@ import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart,
 import { useTheme } from '@mui/material';
 import BoxHeader from '../../components/BoxHeader';
 
-type Props = {};
 
-const Row1 = (props: Props) => {
+const Row1 = (props) => {
     const {palette} = useTheme()
     const { data } = useGetKpisQuery();
     console.log(data, "DATA FROM BACKEND");

@@ -3,9 +3,8 @@ import React, { useState } from 'react'
 import { FlexBetween } from '../../components/FlexBetween';
 import PixIcon from '@mui/icons-material/Pix';
 import { Link } from 'react-router-dom';
-type Props = {}
 
-const Navbar = (props: Props) => {
+const Navbar = (props) => {
     const [selected,setSelected] = useState("dashboard")
     const {palette } = useTheme();
   return (
