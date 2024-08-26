@@ -51,13 +51,13 @@ const Footer = () => {
           mb: 1,
         }}
       >
-        <Link href="https://github.com/your-github" color="inherit" target="_blank" rel="noopener">
+        <Link href="https://github.com/anshu1016" color="inherit" target="_blank" rel="noopener">
           <GitHubIcon fontSize="large" />
         </Link>
-        <Link href="https://twitter.com/your-twitter" color="inherit" target="_blank" rel="noopener">
+        <Link href="https://x.com/anshu___007" color="inherit" target="_blank" rel="noopener">
           <TwitterIcon fontSize="large" />
         </Link>
-        <Link href="https://linkedin.com/in/your-linkedin" color="inherit" target="_blank" rel="noopener">
+        <Link href="https://www.linkedin.com/in/arun-shukla-1399a9196/" color="inherit" target="_blank" rel="noopener">
           <LinkedInIcon fontSize="large" />
         </Link>
       </Box>
