@@ -10,15 +10,15 @@ export const api = createApi({
   reducerPath: "main",
   tagTypes: ["Kpis", "Products", "Transactions"],
   endpoints: (build) => ({
-    getKpis: build.query<Array<GetKpisResponse>, void>({
+    getKpis: build.query({
       query: () => "kpi/kpis/",
       providesTags: ["Kpis"],
     }),
-    getProducts: build.query<Array<GetProductsResponse>, void>({
+    getProducts: build.query({
       query: () => "product/products/",
       providesTags: ["Products"],
     }),
-    getTransactions: build.query<Array<GetTransactionsResponse>, void>({
+    getTransactions: build.query({
       query: () => "transaction/transactions/",
       providesTags: ["Transactions"],
     }),
