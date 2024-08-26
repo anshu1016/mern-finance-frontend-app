@@ -3,14 +3,28 @@
     "name": "MERN Finance Dashboard with ML Predictions",
     "icons": [
       {
-        "src": "images/screenshot.png",
-        "sizes": "192x192",
+        "src": "images/screenshot5.png",
+        "sizes": "320x320",
         "type": "image/png"
       },
       {
-        "src": "images/screenshot2.png",
+        "src": "images/image (2).png",
         "sizes": "512x512",
         "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "images/screenshot5.png",
+        "sizes": "320x320",
+        "type": "image/png",
+        "form_factor": "narrow" 
+      },
+      {
+        "src": "images/image (2).png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "form_factor": "wide"
       }
     ],
     "start_url": ".",

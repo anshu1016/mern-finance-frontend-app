@@ -15,12 +15,12 @@ export default defineConfig({
         background_color: '#ffffff',
         icons: [
           {
-            src: 'images/screenshot.png',
+            src: 'images/image (1).png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'images/screenshot2.png',
+            src: 'images/image (2).png',
             sizes: '512x512',
             type: 'image/png',
           },
