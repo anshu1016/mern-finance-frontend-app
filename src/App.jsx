@@ -8,6 +8,7 @@ import Dashboard from "./scenes/dashboard"
 import Predicition from "./scenes/predictions"
 import "./index.css"
 import { Loader } from "./components/Loader"
+import Footer from "./scenes/footer"
 
 
 
@@ -39,10 +40,13 @@ if(loading){
         <Route path="*" element={<div>No page here</div>}/>
 
       </Routes>
+     
       </Suspense>
     </Box>
+    
   </ThemeProvider>
   </BrowserRouter>
+ <Footer/>
     </>
   )
 }
