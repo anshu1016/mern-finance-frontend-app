@@ -21,7 +21,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/state/api.js", "src/scenes/dashboard/index.jsx", "src/scenes/predictions/index.jsx", "src/scenes/navbar/index.jsx", "src/scenes/dashboard/Row3.jsx", "src/scenes/dashboard/Row1.jsx", "src/App.jsx", "src/state/types.js"],
   "exclude": ["node_modules"]
 }
 
